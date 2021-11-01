@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root{
+    --background: #0C0B0B;
+    --primary: #0F0E0E;
+    --font-color: #B7B7B7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5em auto;
+    width: 100%;
+    height: 80%;
+    background-color:var(--primary);
+    border-radius: 8px;
+    color: var(--font-color);
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+    width: 90%;
+    margin-bottom: 32px;
+}
+
+.profile .edit {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 1.2em;
+    margin-top: 0.6em;
+    background-color: #1b1b1b;
+    padding: 0.7em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.profile .edit:hover{
+    background-color: var(--font-color);
+    color: var(--background) ;
+}
+
+.info img{
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+}
+
+.user h1{
+    font-size: 2em;
+}
+
+.user p{
+    font-size: 1.5em;
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 6rem;
+    margin: 0 auto 1rem;
+    padding: 2rem;
+    font: 1.2rem;
+    border-radius: 8px;
+}
+.about div h1{
+    font-size: 2.5rem;
+}
+
+.projects{
+    background-color: #046313;
+}
+
+.stars{
+    background-color: #044A7D;
+}
+
+.followers{
+    background-color: #725200;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:1120px){
+    .container{
+        width: 60%;
+        padding: 1rem;
+    }
+    .profile{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+    .profile .edit{
+        position: relative;
+        bottom: 0.8rem;
+    }
+    .profile .info{
+        display: flex;
+        text-align: left;
+    }
+    .info img{
+        margin-right: 1rem;
+    }
+    
+    .about{
+        flex-direction: row;
+        padding: 2em;
+    }
+
+    .about div{
+        margin: 1em;
+    }
+}
